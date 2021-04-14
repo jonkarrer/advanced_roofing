@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: baskerville-poster-pt, serif;
+  font-weight: 200;
+  font-style: normal;
+}
+/******First Page******/
+.home {
+  height: 100vh;
+  background-image: url("./assets/home_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.logo-container img {
+  object-fit: fill;
+  width: 90%;
+  max-width: 770px;
+  margin-top: 30px;
+}
+.welcome-container {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+h1.welcome-home,
+h2.down-caret {
+  color: white;
+  font-size: clamp(40px, 5vw, 72px);
+}
