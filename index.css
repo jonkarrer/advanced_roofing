@@ -3,14 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --plain-blue: #1856ba;
-}
+html,
 body {
   font-family: baskerville-poster-pt, serif;
   font-weight: 200;
   font-style: normal;
 }
+/***Components and Colors***/
+:root {
+  --plain-blue: #1856ba;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #f8f0e1;
+  opacity: 0.75;
+}
+
 /******First Page******/
 .home {
   height: 100vh;
@@ -42,7 +53,7 @@ h2.down-caret {
   color: white;
   font-size: clamp(40px, 5vw, 72px);
 }
-/******Home Banner******/
+/*Home Underneath Banner*/
 .home_banner {
   height: 170px;
   padding: 5px 0;
@@ -65,6 +76,7 @@ h2.down-caret {
   color: var(--plain-blue);
 }
 @media (max-width: 500px) {
+  /*Mobile*/
   .home_banner {
     font-size: 26px;
     height: 140px;
@@ -73,4 +85,14 @@ h2.down-caret {
     font-size: 15px;
     width: 250px;
   }
+}
+
+/******Second Page******/
+.page-two {
+  height: 100vh;
+  background-image: url("./assets/whitemap.png");
+  background-repeat: repeat-y;
+  position: center;
+  background-size: cover;
+  position: relative;
 }
