@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --plain-blue: #1856ba;
+}
 body {
   font-family: baskerville-poster-pt, serif;
   font-weight: 200;
@@ -38,4 +41,26 @@ h1.welcome-home,
 h2.down-caret {
   color: white;
   font-size: clamp(40px, 5vw, 72px);
+}
+/******Second Page******/
+.page-two_banner {
+  height: 170px;
+  padding: 5px 0;
+  background: #000;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+}
+.page-two_banner i {
+  color: var(--plain-blue);
+}
+.page-two_banner button {
+  outline: none;
+  border: white solid 1px;
+  background: var(--plain-blue);
+  color: white;
+  font-size: 20px;
+  width: 300px;
+  padding: 5px 0;
+  margin-top: 20px;
 }
