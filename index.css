@@ -288,8 +288,6 @@ a:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vh;
-  width: 100%;
 }
 .top-banner {
   display: flex;
@@ -309,4 +307,64 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
+}
+.image-grid {
+  display: grid;
+  grid-template-rows: 320px 320px;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 10%;
+  gap: 30px;
+}
+.image-grid #one {
+  background: url("./assets/image-grid/one.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #two {
+  background: url("./assets/image-grid/two.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #three {
+  background: url("./assets/image-grid/three.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #four {
+  background: url("./assets/image-grid/four.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #five {
+  background: url("./assets/image-grid/five.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #six {
+  background: url("./assets/image-grid/six.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #seven {
+  background: url("./assets/image-grid/seven.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-grid #eight {
+  background: url("./assets/image-grid/eight.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#large-house {
+  object-fit: fill;
+  width: 100%;
+  padding: 40px 0;
 }
