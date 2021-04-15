@@ -202,7 +202,7 @@ h2.down-caret {
   margin: 0 15%;
 }
 /******Third Page******/
-.page-three {
+.tri-fold {
   display: flex;
   height: 715px;
 }
@@ -245,9 +245,6 @@ a:hover {
   grid-template-rows: 50% 50%;
   grid-template-rows: 50% 50%;
 }
-#second-panel div {
-  border: red solid thin;
-}
 #top-image {
   background: url("./assets/interior_dining.jpg");
 }
@@ -278,5 +275,5 @@ a:hover {
   color: var(--plain-blue);
 }
 #third-panel cite {
-  font-size: 34px;
+  font-size: 30px;
 }
