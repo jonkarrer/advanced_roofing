@@ -67,15 +67,37 @@ h2.down-caret {
 .home_banner i {
   color: var(--plain-blue);
 }
-@media (max-width: 500px) {
-  /*Mobile*/
+/*Regular Screen*/
+@media (max-width: 1250px) {
   .home_banner {
-    font-size: 26px;
-    height: 140px;
+    font-size: 30px;
+    height: 150px;
   }
   .home_banner button {
-    font-size: 15px;
-    width: 250px;
+    font-size: 18px;
+    width: 270px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .home_banner {
+    font-size: 25px;
+    height: 130px;
+  }
+  .home_banner button {
+    font-size: 14px;
+    width: 240px;
+  }
+}
+/*Mobile*/
+@media (max-width: 650px) {
+  .home_banner {
+    font-size: 22px;
+    height: 120px;
+  }
+  .home_banner button {
+    font-size: 12px;
+    width: 200px;
   }
 }
 
@@ -111,11 +133,26 @@ h2.down-caret {
   .top-row p {
     font-size: 46px;
   }
+  .top-row img {
+    width: 250px;
+  }
 }
 /*Mid Screen*/
 @media (max-width: 855px) {
   .top-row p {
     font-size: 38px;
+  }
+  .top-row img {
+    width: 200px;
+  }
+}
+/*Mobile*/
+@media (max-width: 650px) {
+  .top-row p {
+    font-size: 24px;
+  }
+  .top-row img {
+    width: 120px;
   }
 }
 /*Blue Box*/
@@ -215,6 +252,44 @@ h2.down-caret {
     width: 260px;
   }
 }
+/*Mobile*/
+@media (max-width: 650px) {
+  .mid-row {
+    height: 220px;
+  }
+  .mid-row_left-panel button {
+    font-size: 10px;
+    width: 190px;
+    padding: 5px 10px;
+    margin-top: 15px;
+  }
+  .mid-row_left-panel p {
+    font-size: 11px;
+  }
+  .mid-row_right-panel img {
+    height: 140px;
+    width: 120px;
+  }
+}
+/*Small Mobile*/
+@media (max-width: 348px) {
+  .mid-row {
+    height: 200px;
+  }
+  .mid-row_left-panel button {
+    font-size: 10px;
+    width: 180px;
+    padding: 5px 10px;
+    margin-top: 15px;
+  }
+  .mid-row_left-panel p {
+    font-size: 10px;
+  }
+  .mid-row_right-panel img {
+    height: 130px;
+    width: 110px;
+  }
+}
 /***Cards***/
 .bott-row {
   display: flex;
@@ -271,6 +346,22 @@ h2.down-caret {
   }
   .card p {
     font-size: 12px;
+  }
+}
+/*Mobile*/
+@media (max-width: 650px) {
+  .card {
+    height: 150px;
+    width: 105px;
+  }
+  .card h2 {
+    font-size: 16px;
+  }
+  .card img {
+    height: 25px;
+  }
+  .card p {
+    font-size: 6px;
   }
 }
 /******Tri-Fold******/
@@ -389,6 +480,26 @@ a:hover {
     font-size: 18px;
   }
 }
+/*Mobile*/
+@media (max-width: 650px) {
+  .tri-fold {
+    height: 300px;
+  }
+  #first-panel q {
+    color: white;
+    font-size: 10px;
+    margin: 10px 10%;
+  }
+  #first-panel a {
+    font-size: 6px;
+  }
+  #third-panel q {
+    font-size: 10px;
+  }
+  #third-panel cite {
+    font-size: 8px;
+  }
+}
 /******Third Page******/
 .page-three {
   background: linear-gradient(
@@ -427,6 +538,11 @@ a:hover {
   padding-top: 10%;
   gap: 30px;
 }
+#large-house {
+  object-fit: fill;
+  width: 100%;
+  padding: 40px 0;
+}
 /*Regular Screen*/
 @media (max-width: 1250px) {
   .page-three h1 {
@@ -447,18 +563,38 @@ a:hover {
 /*Mid Screen*/
 @media (max-width: 855px) {
   .page-three h1 {
-    font-size: 48px;
+    font-size: 42px;
     text-align: center;
   }
   .page-three h2 {
     font-size: 24px;
   }
   .top-banner img {
-    width: 120px;
+    width: 110px;
   }
   .image-grid {
     grid-template-rows: 200px 200px;
     gap: 10px;
+  }
+}
+/*Mobile*/
+@media (max-width: 650px) {
+  .page-three h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .page-three h2 {
+    font-size: 18px;
+  }
+  .top-banner img {
+    width: 50px;
+  }
+  .image-grid {
+    grid-template-rows: 100px 100px;
+    gap: 8px;
+  }
+  #large-house {
+    padding: 10px 0;
   }
 }
 .image-grid #one {
@@ -509,11 +645,6 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#large-house {
-  object-fit: fill;
-  width: 100%;
-  padding: 40px 0;
-}
 /******Footer******/
 footer {
   height: 205px;
@@ -525,7 +656,7 @@ footer {
 }
 #footer-logo {
   object-fit: fill;
-  width: 20vw;
+  width: 25vw;
   max-width: 320px;
 }
 footer h2 {
@@ -559,7 +690,21 @@ footer a {
 }
 /*Mid Screen*/
 @media (max-width: 855px) {
+  footer {
+    height: 180px;
+    padding: 0 30px;
+  }
   footer h2 {
     font-size: 15px;
+  }
+}
+/*Mobile*/
+@media (max-width: 650px) {
+  footer {
+    height: 100px;
+    padding: 0 10px;
+  }
+  footer h2 {
+    font-size: 8px;
   }
 }
