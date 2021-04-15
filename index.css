@@ -255,20 +255,21 @@ h2.down-caret {
 /*Mobile*/
 @media (max-width: 650px) {
   .mid-row {
-    height: 220px;
+    height: 200px;
   }
   .mid-row_left-panel button {
     font-size: 10px;
-    width: 190px;
-    padding: 5px 10px;
+    width: 180px;
+    padding: 5px 5px;
     margin-top: 15px;
   }
   .mid-row_left-panel p {
-    font-size: 11px;
+    font-size: 11.5px;
   }
   .mid-row_right-panel img {
     height: 140px;
     width: 120px;
+    margin-left: 10px;
   }
 }
 /*Small Mobile*/
@@ -351,17 +352,17 @@ h2.down-caret {
 /*Mobile*/
 @media (max-width: 650px) {
   .card {
-    height: 150px;
-    width: 105px;
+    height: 165px;
+    width: 110px;
   }
   .card h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .card img {
-    height: 25px;
+    height: 20px;
   }
   .card p {
-    font-size: 6px;
+    font-size: 9px;
   }
 }
 /******Tri-Fold******/
@@ -487,17 +488,17 @@ a:hover {
   }
   #first-panel q {
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     margin: 10px 10%;
   }
   #first-panel a {
-    font-size: 6px;
-  }
-  #third-panel q {
     font-size: 10px;
   }
+  #third-panel q {
+    font-size: 15px;
+  }
   #third-panel cite {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 /******Third Page******/
@@ -580,11 +581,11 @@ a:hover {
 /*Mobile*/
 @media (max-width: 650px) {
   .page-three h1 {
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
   }
   .page-three h2 {
-    font-size: 18px;
+    font-size: 23px;
   }
   .top-banner img {
     width: 50px;
@@ -705,6 +706,6 @@ footer a {
     padding: 0 10px;
   }
   footer h2 {
-    font-size: 8px;
+    font-size: 13px;
   }
 }
