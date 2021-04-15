@@ -14,7 +14,6 @@ body {
   --plain-blue: #1856ba;
   --dark-blue: #00183f;
 }
-
 /******First Page******/
 .home {
   height: 100vh;
@@ -107,6 +106,18 @@ h2.down-caret {
   font-size: 56px;
   text-align: center;
 }
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  .top-row p {
+    font-size: 46px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .top-row p {
+    font-size: 38px;
+  }
+}
 /*Blue Box*/
 .mid-row {
   height: 443px;
@@ -160,6 +171,7 @@ h2.down-caret {
   height: 377px;
   width: 355px;
   border: white solid 5px;
+  margin-left: 30px;
 }
 .overlay {
   position: absolute;
@@ -169,7 +181,41 @@ h2.down-caret {
   background: #00183f;
   opacity: 0.95;
 }
-/*Cards*/
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  .mid-row {
+    height: 400px;
+  }
+  .mid-row_left-panel button {
+    font-size: 25px;
+    width: 430px;
+  }
+  .mid-row_left-panel p {
+    font-size: 28px;
+  }
+  .mid-row_right-panel img {
+    height: 330px;
+    width: 310px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .mid-row {
+    height: 350px;
+  }
+  .mid-row_left-panel button {
+    font-size: 20px;
+    width: 340px;
+  }
+  .mid-row_left-panel p {
+    font-size: 20px;
+  }
+  .mid-row_right-panel img {
+    height: 280px;
+    width: 260px;
+  }
+}
+/***Cards***/
 .bott-row {
   display: flex;
   align-items: center;
@@ -200,6 +246,32 @@ h2.down-caret {
 }
 .card p {
   margin: 0 15%;
+}
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  .card {
+    height: 320px;
+    width: 270px;
+  }
+  .card h2 {
+    font-size: 33px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .card {
+    height: 250px;
+    width: 200px;
+  }
+  .card h2 {
+    font-size: 24px;
+  }
+  .card img {
+    height: 40px;
+  }
+  .card p {
+    font-size: 12px;
+  }
 }
 /******Tri-Fold******/
 .tri-fold {
@@ -277,6 +349,46 @@ a:hover {
 #third-panel cite {
   font-size: 30px;
 }
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  .tri-fold {
+    height: 600px;
+  }
+  #first-panel q {
+    color: white;
+    font-size: 26px;
+    margin: 20px 10%;
+  }
+  #first-panel a {
+    font-size: 15px;
+  }
+  #third-panel q {
+    font-size: 28px;
+  }
+  #third-panel cite {
+    font-size: 25px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .tri-fold {
+    height: 500px;
+  }
+  #first-panel q {
+    color: white;
+    font-size: 20px;
+    margin: 15px 10%;
+  }
+  #first-panel a {
+    font-size: 12px;
+  }
+  #third-panel q {
+    font-size: 20px;
+  }
+  #third-panel cite {
+    font-size: 18px;
+  }
+}
 /******Third Page******/
 .page-three {
   background: linear-gradient(
@@ -314,6 +426,40 @@ a:hover {
   grid-template-columns: auto auto auto auto;
   padding-top: 10%;
   gap: 30px;
+}
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  .page-three h1 {
+    font-size: 54px;
+    text-align: center;
+  }
+  .page-three h2 {
+    font-size: 30px;
+  }
+  .top-banner img {
+    width: 170px;
+  }
+  .image-grid {
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  .page-three h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .page-three h2 {
+    font-size: 24px;
+  }
+  .top-banner img {
+    width: 120px;
+  }
+  .image-grid {
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+  }
 }
 .image-grid #one {
   background: url("./assets/image-grid/one.jpg");
@@ -379,7 +525,8 @@ footer {
 }
 #footer-logo {
   object-fit: fill;
-  width: 320px;
+  width: 20vw;
+  max-width: 320px;
 }
 footer h2 {
   color: white;
@@ -394,8 +541,25 @@ footer a {
 .yelp-bbb-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   height: 50%;
 }
 .yelp-bbb-container img {
   object-fit: fill;
+  height: 60%;
+}
+/*Regular Screen*/
+@media (max-width: 1250px) {
+  footer h2 {
+    font-size: 20px;
+  }
+  .yelp-bbb-container {
+    height: 40%;
+  }
+}
+/*Mid Screen*/
+@media (max-width: 855px) {
+  footer h2 {
+    font-size: 15px;
+  }
 }
