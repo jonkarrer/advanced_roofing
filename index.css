@@ -368,3 +368,34 @@ a:hover {
   width: 100%;
   padding: 40px 0;
 }
+/******Footer******/
+footer {
+  height: 205px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+#footer-logo {
+  object-fit: fill;
+  width: 320px;
+}
+footer h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.yelp-bbb-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.yelp-bbb-container img {
+  object-fit: fill;
+}
