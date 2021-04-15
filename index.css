@@ -12,6 +12,7 @@ body {
 /***Components and Colors***/
 :root {
   --plain-blue: #1856ba;
+  --dark-blue: #00183f;
 }
 
 /******First Page******/
@@ -168,6 +169,7 @@ h2.down-caret {
   background: #00183f;
   opacity: 0.95;
 }
+/*Cards*/
 .bott-row {
   display: flex;
   align-items: center;
@@ -198,4 +200,83 @@ h2.down-caret {
 }
 .card p {
   margin: 0 15%;
+}
+/******Third Page******/
+.page-three {
+  display: flex;
+  height: 715px;
+}
+#first-panel,
+#second-panel,
+#third-panel {
+  flex: 1;
+}
+#first-panel {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), #000),
+    url("./assets/happy-couple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: left;
+}
+#first-panel q {
+  color: white;
+  font-size: 30px;
+  margin: 40px 10%;
+  padding-bottom: 15px;
+  border-bottom: white solid 2px;
+}
+#first-panel a {
+  color: white;
+  float: left;
+  margin: 0 10% 15%;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+#second-panel {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+#second-panel div {
+  border: red solid thin;
+}
+#top-image {
+  background: url("./assets/interior_dining.jpg");
+}
+#bott-image {
+  background: url("./assets/interior_bath.jpg");
+}
+#top-image,
+#bott-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#third-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-blue);
+  color: white;
+  text-align: center;
+}
+#third-panel q {
+  margin: 3%;
+  font-size: 36px;
+}
+#third-panel i {
+  color: var(--plain-blue);
+}
+#third-panel cite {
+  font-size: 34px;
 }
